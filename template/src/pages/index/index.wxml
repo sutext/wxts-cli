@@ -1,0 +1,5 @@
+<view class="content">
+    <hello id="hello" />
+    <view wx:for="{{items}}" wx:key="">{{item.title}}:{{env[item.key]}}</view>
+    <button bind:tap="sayWorld">say world</button>
+</view>

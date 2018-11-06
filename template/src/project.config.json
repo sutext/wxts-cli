@@ -1,0 +1,25 @@
+{
+    "description": "请修改项目描述",
+    "packOptions": {
+        "ignore": []
+    },
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "nodeModules": true
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.2.1",
+    "appid": "wx2a1ad3b2dffc78d1",
+    "projectname": "wecp",
+    "isGameTourist": false,
+    "condition": {
+        "home": {
+            "current": -1,
+            "list": []
+        }
+    }
+}

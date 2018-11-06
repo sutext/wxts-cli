@@ -1,0 +1,44 @@
+{
+    "name": "wxts-cli",
+    "version": "1.0.0",
+    "description": "wxts 脚手架",
+    "main": "index.js",
+    "bin": {
+        "wxts": "index.js"
+    },
+    "files": [
+        "index.js",
+        "template",
+        "gulpfile.js"
+    ],
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/sutext/wepk-cli.git"
+    },
+    "keywords": [
+        "微信",
+        "小程序",
+        "weapp",
+        "wxts",
+        "typescript",
+        "wxpack"
+    ],
+    "author": "supertext",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sutext/wepk-cli/issues"
+    },
+    "homepage": "https://github.com/sutext/wepk-cli#readme",
+    "dependencies": {
+        "commander": "^2.19.0",
+        "cross-spawn": "^6.0.5",
+        "gulp": "^4.0.0",
+        "gulp-clean": "^0.4.0",
+        "gulp-cli": "^2.0.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-typescript": "^4.0.2",
+        "typescript": "^3.1.3"
+    },
+    "devDependencies": {}
+}
