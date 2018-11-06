@@ -16,6 +16,6 @@
     "devDependencies": {},
     "dependencies": {
         "tslib": "^1.9.3",
-        "wxts": "0.2.3"
+        "wxts": "^1.0.0"
     }
 }
