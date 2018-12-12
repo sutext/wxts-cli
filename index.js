@@ -65,7 +65,9 @@ function build(watch, dist) {
     }
     require('gulp-cli')()
 }
-program.version('0.1.0');
+
+program.version(require(path.join(__dirname, 'package.json')).version);
+
 program
     .command('new <dir>')
     .description('Create an wexin miniprogram')
@@ -73,6 +75,7 @@ program
     .action(function (dir, cmd) {
         create(dir, cmd.appid)
     });
+
 program
     .command('build')
     .description('build the miniprogram project')
@@ -81,4 +84,5 @@ program
     .action(function (cmd) {
         build(cmd.watch, cmd.dist)
     });
+
 program.parse(process.argv)

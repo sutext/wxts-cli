@@ -1,6 +1,6 @@
 {
     "name": "wxts-cli",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "wxts 脚手架",
     "main": "index.js",
     "bin": {
