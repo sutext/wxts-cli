@@ -7,7 +7,7 @@ var tsProject = ts.createProject("tsconfig.json");
 dist = process.env.BUILD_DIST || 'build'
 gulp.task('clean', function () {
     return gulp
-        .src(dist, { read: false })
+        .src(dist, { read: false, allowEmpty: true })
         .pipe(clean())
 })
 gulp.task("build", function () {

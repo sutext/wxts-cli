@@ -1,6 +1,6 @@
 {
     "name": "template",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "template description",
     "private": true,
     "main": "app.js",
@@ -16,6 +16,6 @@
     "devDependencies": {},
     "dependencies": {
         "tslib": "^1.9.3",
-        "wxts": "^1.0.8"
+        "wxts": "^1.1.6"
     }
 }

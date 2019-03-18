@@ -1,17 +1,17 @@
 
 import { app, IApp } from 'wxts'
-import { socket } from './libs/socket';
+import { client } from './libs/socket';
 const env = wx.getSystemInfoSync()
 @app({ env })
-export default class Application extends IApp implements wts.IApp {
+export default class Application extends IApp implements wx.IApp {
     onLaunch() {
-        socket.addListener(this)
+        client.on('message', this, this.onMessage)
     }
     onShow() {
-        socket.start()//启动socket 心跳 需配置正确socket 地址
+        client.start()//启动socket 心跳 需配置正确socket 地址
     }
     onHide() {
-        socket.stop()//停止socket
+        client.stop()//停止socket
     }
     onMessage(json: any, isOffline: boolean) {
         console.log(json)

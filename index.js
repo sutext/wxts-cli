@@ -40,7 +40,10 @@ function create(dir, appid) {
                 fs.writeFileSync(confpath, JSON.stringify(conf, null, 4))
                 console.log('adding packges');
                 spawn('npm', ['i'], { stdio: 'inherit' }).on('exit', function () {
-                    console.log('A new project created at :', absdir);
+                    console.log('updating wxts packges');
+                    spawn('npm', ['update', 'wxts', '--save'], { stdio: 'inherit' }).on('exit', function () {
+                        console.log('A new project created at :', absdir);
+                    })
                 })
             } catch (error) {
                 fs.rmdirSync(absdir)

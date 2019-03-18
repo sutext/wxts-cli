@@ -7,7 +7,7 @@ class Network extends wxts.Network {
         //}
         return header
     }
-    protected get method(): wts.HttpMethod {
+    protected get method(): wxts.Network.Method {
         //TODO: config the http method here
         return 'POST'
     }

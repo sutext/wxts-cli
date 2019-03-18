@@ -1,4 +1,4 @@
-import { storage } from "wxts";
+import { orm } from "wxts";
 
 export class Asset {
     public readonly account: string
@@ -10,13 +10,13 @@ export class Asset {
         this.balance = json.balance || 0
     }
 }
-@storage.store('User', 'account')
+@orm.store('User', 'account')
 export class User {
     public readonly account: string
     public readonly nickname: string
     public readonly avatar: string
     public readonly phone: string
-    @storage.field(Asset)
+    @orm.field(Asset)
     public readonly asset: Asset
     constructor(json?: any) {
         if (!json) {
