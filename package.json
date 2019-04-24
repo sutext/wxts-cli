@@ -1,6 +1,6 @@
 {
     "name": "wxts-cli",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "wxts 脚手架",
     "main": "index.js",
     "bin": {
@@ -14,7 +14,7 @@
     "scripts": {},
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/sutext/wepk-cli.git"
+        "url": "git+ssh://git@github.com/sutext/wxts-cli.git"
     },
     "keywords": [
         "微信",
@@ -27,7 +27,7 @@
     "author": "supertext",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/sutext/wepk-cli/issues"
+        "url": "https://github.com/sutext/wxts-cli/issues"
     },
     "homepage": "https://github.com/sutext/wepk-cli#readme",
     "dependencies": {

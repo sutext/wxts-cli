@@ -1,5 +1,5 @@
-import * as wxts from "wxts";
-class Network extends wxts.Network {
+import { Network } from "wxts";
+class Client extends Network {
     protected get headers() { //config http headers
         const header: any = {}
         //if (session.isLogin) {
@@ -7,7 +7,7 @@ class Network extends wxts.Network {
         //}
         return header
     }
-    protected get method(): wxts.Network.Method {
+    protected get method(): Network.Method {
         //TODO: config the http method here
         return 'POST'
     }
@@ -15,7 +15,7 @@ class Network extends wxts.Network {
         //TODO: config your full url here
         return "http://www.yourdom.com/xx/" + path
     }
-    protected resolve(resp: any) {//resolve response data
+    protected resolve(resp: wx.HttpResponse): any {//resolve response data
         console.log(resp);
         if (resp.statusCode != 200) {//检查网络错
             throw new Error(resp.errMsg || "网络错误")
@@ -33,4 +33,4 @@ class Network extends wxts.Network {
         throw new Error(obj.message || '系统错误')
     }
 }
-export const net = new Network()
+export const net = new Client()
