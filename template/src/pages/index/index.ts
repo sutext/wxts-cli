@@ -1,23 +1,35 @@
 import { page, IPage, orm } from 'wxts';
-import Hello from '../../widgets/hello/index'
-import { net } from '../../libs/network';
-import { User } from '../../libs/models';
-const items = [{ title: "系统版本", key: "model" }, { title: "屏幕宽度", key: "screenWidth" }, { title: "屏幕高度", key: "screenHeight" }]
-@page({ items })
+import Poper from '../../widgets/poper-test/index'
+import Popup from '../../widgets/popup-test/index'
+import { net } from '../../service/network';
+import { User } from '../../service/models';
+
+@page({ rows: [1, 1, 1, 1, 1, 1, 1, , 1, 1, 1, 1] })
 export default class Index extends IPage implements wx.IPage {
-    private hello: Hello
+    private popertest: Poper
+    private popuptest: Popup
     onLoad() {
-        this.hello = this.selectComponent('#hello')
-        net.objtask(User, 'user/info', { id: 'userid' })
-            .then(user => {
-                orm.save(user)
-                console.log(user)
-            })
-            .catch(e => {
-                console.log(e)
-            })
+        this.popertest = this.selectComponent('#poper-test')
+        this.popuptest = this.selectComponent('#popup-test')
+        // net.objtask(User, 'user/info', { id: 'userid' })
+        //     .then(user => {
+        //         orm.save(user)
+        //         console.log(user)
+        //     })
+        //     .catch(e => {
+        //         console.log(e)
+        //     })
     }
-    sayWorld() {
-        this.hello.sayWorld()
+    poperTest() {
+        this.popertest.toggle()
+    }
+    popupTest() {
+        this.popuptest.toggle()
+    }
+    onTyping(e) {
+        console.log(e.detail.value);
+    }
+    goBack(e) {
+        console.log(e)
     }
 }

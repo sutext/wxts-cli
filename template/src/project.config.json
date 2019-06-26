@@ -14,7 +14,7 @@
     "compileType": "miniprogram",
     "libVersion": "2.2.1",
     "appid": "wx2a1ad3b2dffc78d1",
-    "projectname": "wecp",
+    "projectname": "wxts-ui",
     "isGameTourist": false,
     "condition": {
         "home": {

@@ -1,6 +1,14 @@
 {
-    "navigationBarTitleText": "首页",
+    "navigationBarTitleText": "测试",
     "usingComponents": {
-        "hello": "/widgets/hello/index"
+        "btn": "wxts-ui/button",
+        "navbar": "wxts-ui/navbar",
+        "search": "wxts-ui/search",
+        "grader": "wxts-ui/grader",
+        "segment": "wxts-ui/segment",
+        "slidbar": "wxts-ui/slidbar",
+        "toolbar": "wxts-ui/toolbar",
+        "poper-test": "/widgets/poper-test/index",
+        "popup-test": "/widgets/popup-test/index"
     }
 }

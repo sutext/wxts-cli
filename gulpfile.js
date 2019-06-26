@@ -70,8 +70,8 @@ gulp.task('watch', function () {
     })
 })
 gulp.task('default',
-    gulp.series('clean', gulp.parallel('build', 'copy', mtasks), 'watch')
+    gulp.series('clean', 'build', 'copy', gulp.parallel(mtasks), 'watch')
 );
 gulp.task('nowatch',
-    gulp.series('clean', gulp.parallel('build', 'copy', mtasks))
+    gulp.series('clean', 'build', gulp.parallel(mtasks), 'copy')
 );

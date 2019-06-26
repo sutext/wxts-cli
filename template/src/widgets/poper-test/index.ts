@@ -1,7 +1,7 @@
+
 import { widget, Widget } from 'wxts'
-@widget({ title: 'hello widget' })
+import { modal } from 'wxts-ui'
+@widget()
 export default class Index extends Widget implements wx.IComponent {
-    sayWorld() {
-        this.setData({ title: "hello world!!!" })
-    }
+    behaviors = [modal]
 }

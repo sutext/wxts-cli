@@ -41,7 +41,7 @@ function create(dir, appid) {
                 console.log('adding packges');
                 spawn('npm', ['i'], { stdio: 'inherit' }).on('exit', function () {
                     console.log('updating wxts packges');
-                    spawn('npm', ['update', 'wxts', '--save'], { stdio: 'inherit' }).on('exit', function () {
+                    spawn('npm', ['i', 'wxts', 'wxts-ui'], { stdio: 'inherit' }).on('exit', function () {
                         console.log('A new project created at :', absdir);
                     })
                 })
