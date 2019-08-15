@@ -12,11 +12,5 @@
         "template"
     ],
     "author": "supertext",
-    "license": "ISC",
-    "devDependencies": {},
-    "dependencies": {
-        "tslib": "^1.9.3",
-        "wxts": "^1.2.7",
-        "wxts-ui": "^1.1.1"
-    }
+    "license": "ISC"
 }

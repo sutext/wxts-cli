@@ -13,12 +13,16 @@ export default class Index extends IPage implements wx.IPage {
         this.popuptest = this.selectComponent('#popup-test')
         // net.objtask(User, 'user/info', { id: 'userid' })
         //     .then(user => {
-        //         orm.save(user)
+        //         orm.save(user)//可直接获得结构化的模型
         //         console.log(user)
+        //         return arytask(User, 'user/friends')
+        //     }).then(users => {
+        //         console.log(users)//可直接获得结构化的模型
         //     })
         //     .catch(e => {
         //         console.log(e)
         //     })
+
     }
     poperTest() {
         this.popertest.toggle()
