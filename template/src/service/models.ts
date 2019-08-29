@@ -1,28 +1,27 @@
-import { orm } from "wxts";
-
+const { store, field } = wx.orm;
 export class Asset {
-    public readonly account: string
-    public readonly balance: number
+    public readonly account: string;
+    public readonly balance: number;
     constructor(json?: any) {
         if (!json) {
-            return
+            return;
         }
-        this.balance = json.balance || 0
+        this.balance = json.balance || 0;
     }
 }
-@orm.store('User', 'account')
+@store('User', 'account')
 export class User {
-    public readonly account: string
-    public readonly nickname: string
-    public readonly avatar: string
-    public readonly phone: string
-    @orm.field(Asset)
-    public readonly asset: Asset
+    public readonly account: string;
+    public readonly nickname: string;
+    public readonly avatar: string;
+    public readonly phone: string;
+    @field(Asset)
+    public readonly asset: Asset;
     constructor(json?: any) {
         if (!json) {
-            return
+            return;
         }
-        Object.assign(this, json)
-        this.asset = new Asset(json.asset)
+        Object.assign(this, json);
+        this.asset = new Asset(json.asset);
     }
 }

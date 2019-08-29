@@ -6,8 +6,7 @@
         "noEmitHelpers": true,
         "importHelpers": true,
         "target": "es5",
+        "types": ["wxts"]
     },
-    "include": [
-        "src"
-    ]
+    "include": ["src"]
 }
