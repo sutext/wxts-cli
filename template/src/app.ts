@@ -3,7 +3,7 @@ import './config';
 import { client } from './service/socket';
 const env = wx.getSystemInfoSync();
 @wx.app({ env })
-export default class App extends wx.App implements wx.IApp {
+export default class App extends wx.App {
     onLaunch() {
         client.on('message', this, this.onMessage);
     }

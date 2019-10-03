@@ -4,7 +4,7 @@ import { net } from '../../service/network';
 import { User } from '../../service/models';
 
 @wx.page({ rows: [1, 1, 1, 1, 1, 1, 1, , 1, 1, 1, 1] })
-export default class Index extends wx.Page implements wx.IPage {
+export default class Index extends wx.Page {
     private popertest: Poper;
     private popuptest: Popup;
     onLoad() {
