@@ -3,7 +3,6 @@ var program = require('commander');
 var fs = require('fs');
 var path = require('path');
 var spawn = require('cross-spawn');
-
 function create(dir, appid) {
     var absdir = path.resolve(dir);
     var parsed = path.parse(absdir);

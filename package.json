@@ -31,8 +31,8 @@
     },
     "homepage": "https://github.com/sutext/wepk-cli#readme",
     "dependencies": {
-        "@sutxt/fs": "^1.0.1",
         "commander": "^4.0.1",
+        "cross-spawn": "^7.0.1",
         "gulp": "^4.0.2",
         "gulp-clean": "^0.4.0",
         "gulp-cli": "^2.2.0",
