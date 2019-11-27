@@ -31,14 +31,14 @@
     },
     "homepage": "https://github.com/sutext/wepk-cli#readme",
     "dependencies": {
-        "commander": "^2.19.0",
-        "cross-spawn": "^6.0.5",
-        "gulp": "^4.0.0",
+        "@sutxt/fs": "^1.0.1",
+        "commander": "^4.0.1",
+        "gulp": "^4.0.2",
         "gulp-clean": "^0.4.0",
-        "gulp-cli": "^2.0.1",
+        "gulp-cli": "^2.2.0",
         "gulp-rename": "^1.4.0",
-        "gulp-typescript": "^4.0.2",
-        "typescript": "^3.1.6"
+        "gulp-typescript": "^6.0.0-alpha.1",
+        "typescript": "^3.7.2"
     },
     "devDependencies": {}
 }
