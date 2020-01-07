@@ -7,7 +7,7 @@ import { User } from '../../service/models';
 export default class Index extends wx.Page {
     private popertest: Poper;
     private popuptest: Popup;
-    onLoad() {
+    protected onLoad() {
         this.popertest = this.selectComponent('#poper-test');
         this.popuptest = this.selectComponent('#popup-test');
         // net.objtask(User, 'user/info', { id: 'userid' })
@@ -22,16 +22,16 @@ export default class Index extends wx.Page {
         //         console.log(e)
         //     })
     }
-    poperTest() {
+    protected poperTest() {
         this.popertest.toggle();
     }
-    popupTest() {
+    protected popupTest() {
         this.popuptest.toggle();
     }
-    onTyping(e) {
+    protected onTyping(e) {
         console.log(e.detail.value);
     }
-    goBack(e) {
+    protected goBack(e) {
         console.log(e);
     }
 }

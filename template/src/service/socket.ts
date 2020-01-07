@@ -13,7 +13,7 @@ class Client extends wx.Socket.Client {
         }
     }
     protected onMessage(msg: any) {
-        this.observers.message.forEach(ele => ele.callback.call(ele.target, msg));
+        this.emit('message', msg);
     }
 }
 export const client = new Client();
